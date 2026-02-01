@@ -1,0 +1,13 @@
+@EGeek.API_HostAddress = http://localhost:5193
+
+POST {{EGeek.API_HostAddress}}/v1/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "victor@geek.com",
+  "password": "@123#Ab",
+  "role": "catalog"
+}
+
+###
