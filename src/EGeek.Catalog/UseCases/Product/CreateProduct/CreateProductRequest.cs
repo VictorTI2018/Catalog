@@ -1,6 +1,6 @@
 ﻿namespace EGeek.Catalog.UseCases.Product.CreateProduct
 {
-    internal class CreateProductRequest
+    public class CreateProductRequest
     {
         public CreateProductRequest(
             string name,

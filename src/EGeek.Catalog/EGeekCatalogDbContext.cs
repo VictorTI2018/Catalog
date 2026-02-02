@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EGeek.Catalog
 {
     public sealed class EGeekCatalogDbContext
-        : DbContext
+        : DbContext, IUnitOfWork
     {
         public EGeekCatalogDbContext(
             DbContextOptions<EGeekCatalogDbContext> options) : base(options)

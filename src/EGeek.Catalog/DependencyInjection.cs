@@ -17,6 +17,9 @@ namespace EGeek.Catalog
                 options.UseSqlServer(connectionString,
                     config => config.MigrationsHistoryTable("__EFMigrationsHistory", "Catalog"));
             });
+
+            services.AddScoped<IUnitOfWork>(provider =>
+               provider.GetRequiredService<EGeekCatalogDbContext>());
         }
     }
 }
